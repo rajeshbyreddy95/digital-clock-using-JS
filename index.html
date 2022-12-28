@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            nav{
+                background-color: antiquewhite;
+                font-family: sans-serif;
+            
+                display: flex;
+                justify-content: space-between;
+            }
+            ul{
+                position: relative;
+                top: 9px;
+                float: right;
+            }
+            ul li{
+             display: inline;
+             margin-left: 30px;
+             
+             
+             
+            }
+        </style>
+    </head>
+<body>
+
+
+    <nav>
+        <h1>Amazon</h1>
+        <ul>
+            <li>HOME</li>
+            <li>CONTACT</li>
+            <li>ABOUT US</li>
+        
+        </ul>
+    </nav>
+
+    <form action="" onsubmit="val()">
+        <fieldset>
+            <legend>Login   Form</legend><br>
+            User Name:<input type="text" id="name" >  <br><br>
+            Password :<input type="text" id="pwd"> <br> <br>
+             Confirm Password :<input type="text" id="cpwd"> <br><br>
+             <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <script>
+        function val(){
+        let uname = document.getElementById("name");
+        let pass = document.getElementById("pwd");
+        let cpass = document.getElementById("cpwd");
+        if(isNaN(uname)){
+            alert("Please enter user name");
+            
+        }
+        if(isNaN(pass)){
+            alert("Please enter password");
+            
+        }
+        if(isNaN(cpass)){
+            alert("Please enter confirm password");
+            
+        }
+    }
+    </script>
+</body>
+</html> 
